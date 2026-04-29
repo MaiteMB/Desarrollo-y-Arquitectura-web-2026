@@ -4,12 +4,14 @@
      <h2>Datos recibidos</h2>
 
         Usuario:
-        <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtusuario" runat="server"></asp:TextBox>
         <br /><br />
 
         Comentario:
-        <asp:TextBox ID="txtComentario" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtcontraseña" runat="server"></asp:TextBox>
         <br /><br />
-
+    Edad:
+<asp:TextBox ID="txtedad" runat="server"></asp:TextBox>
+<br /><br />
         <asp:Button ID="btnVolver" runat="server" Text="Volver" OnClick="btnVolver_Click" />
 </asp:Content>

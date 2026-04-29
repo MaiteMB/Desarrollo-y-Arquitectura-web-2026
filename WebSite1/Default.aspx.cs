@@ -14,9 +14,9 @@ public partial class _Default : Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        Session["usuario"] =txtusuario.Text;
-        Session["contraseña"] =txtcontraseña.Text;
-
+        Session["usuario"] = txtusuario.Text;
+        Session["contraseña"] = txtcontraseña.Text;
+        Session["edad"] = txtedad.Text;
         Response.Redirect("Respuestas.aspx");
     }
 }

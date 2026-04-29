@@ -11,8 +11,16 @@ public partial class Contact : Page
     {
         if (!IsPostBack)
         {
-            txtUsuario.Text = Session["usuario"].ToString();
-            txtComentario.Text = Session["contraseña"].ToString();
+            txtusuario.Text = Convert.ToString(Session["usuario"]);
+            txtcontraseña.Text = Convert.ToString(Session["contraseña"]);
+            txtedad.Text = Session["edad"] != null ? Session["edad"].ToString() : string.Empty;
+
+            // Alternativamente, forzar regreso si falta información crítica:
+            if (Session["edad"] == null)
+            {
+                Response.Redirect("Default.aspx");
+                return;
+            }
         }
     }
 
